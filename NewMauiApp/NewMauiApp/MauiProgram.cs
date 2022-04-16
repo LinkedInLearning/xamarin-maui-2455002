@@ -1,4 +1,6 @@
-﻿using Microsoft.Maui.LifecycleEvents;
+﻿using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.LifecycleEvents;
+using NewMauiApp.Effects;
 using NewMAUIApp.Library.Interfaces;
 using NewMAUIApp.Library.ViewModels;
 
@@ -32,6 +34,11 @@ public static class MauiProgram
 			});
 		});
 #endif
+		builder.ConfigureEffects(effects => {
+#if ANDROID
+			effects.Add<TextColorEffect, Platforms.Android.Effects.TextColorEffect>();
+#endif
+		});
 
 		builder.Services.AddSingleton<ILocation, NewMAUIApp.Library.Platforms.Location>();
 
