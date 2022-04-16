@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:effects="clr-namespace:NewMauiApp.Effects"
+             xmlns:controls="clr-namespace:NewMauiApp.Controls"
              x:Class="NewMauiApp.EffectsPage"
              Title="EffectsPage"
-             BackgroundColor="White" FlyoutItem.IsVisible="True">
+             BackgroundColor="Black" FlyoutItem.IsVisible="True">
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Other Actions">
             <MenuFlyoutItem Text="Back" />
@@ -18,5 +19,10 @@
                 <effects:TextColorEffect />
             </Label.Effects>
         </Label>
+        <controls:AutoSelectEntry
+                Text="Auto Select Text"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Fill">
+        </controls:AutoSelectEntry>
     </StackLayout>
 </ContentPage>
