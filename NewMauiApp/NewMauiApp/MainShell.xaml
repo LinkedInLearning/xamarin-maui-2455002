@@ -3,6 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NewMauiApp.MainShell"
              xmlns:pages="clr-namespace:NewMauiApp"
-             Title="MainShell">
-    
+             Title="MainShell"
+             FlyoutBehavior="Flyout">
+    <TabBar>
+        <Tab Title="Location">
+            <ShellContent ContentTemplate="{DataTemplate pages:MainPage}" />
+        </Tab>
+        <Tab Title="LifeCycle">
+            <ShellContent ContentTemplate="{DataTemplate pages:LifecyclePage}" />
+        </Tab>
+        <Tab Title="Effects">
+            <ShellContent ContentTemplate="{DataTemplate pages:EffectsPage}" />
+        </Tab>
+    </TabBar>
+    <ShellContent Title="Location"  ContentTemplate="{DataTemplate pages:MainPage}" />
+    <ShellContent Title="LifeCycle" ContentTemplate="{DataTemplate pages:LifecyclePage}" />
+    <ShellContent Title="Effects" ContentTemplate="{DataTemplate pages:EffectsPage}" />
 </Shell>
