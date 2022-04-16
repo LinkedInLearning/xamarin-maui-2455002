@@ -6,6 +6,8 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
+		Routing.RegisterRoute("PushedPage", typeof(PushedPage));
+
 		MainPage = startPage;
 	}
 }

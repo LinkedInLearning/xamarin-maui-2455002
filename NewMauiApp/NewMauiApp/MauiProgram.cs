@@ -16,6 +16,7 @@ public static class MauiProgram
 			});
 		builder.Services.AddTransient<MainPage>();
 		builder.Services.AddTransient<MainPageViewModel>();
+		builder.Services.AddTransient<LifecyclePageViewModel>();
 		builder.Services.AddTransient<LifecyclePage>();
 		builder.Services.AddTransient<MainShell>();
 		builder.Services.AddTransient<EffectsPage>();
