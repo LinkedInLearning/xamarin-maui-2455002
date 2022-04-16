@@ -16,6 +16,9 @@ public static class MauiProgram
 			});
 		builder.Services.AddTransient<MainPage>();
 		builder.Services.AddTransient<MainPageViewModel>();
+		builder.Services.AddTransient<LifecyclePage>();
+		builder.Services.AddTransient<MainShell>();
+		builder.Services.AddTransient<EffectsPage>();
 
 		builder.Services.AddSingleton<ILocation, NewMAUIApp.Library.Platforms.Location>();
 

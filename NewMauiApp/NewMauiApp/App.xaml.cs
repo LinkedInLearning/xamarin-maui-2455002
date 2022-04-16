@@ -2,7 +2,7 @@
 
 public partial class App : Application
 {
-	public App(MainPage startPage)
+	public App(MainShell startPage)
 	{
 		InitializeComponent();
 
