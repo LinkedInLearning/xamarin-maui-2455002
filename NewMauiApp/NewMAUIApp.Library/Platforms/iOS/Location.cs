@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NewMAUIApp.Library.Platforms.iOS
+namespace NewMAUIApp.Library.Platforms
 {
     public class Location : ILocation
     {

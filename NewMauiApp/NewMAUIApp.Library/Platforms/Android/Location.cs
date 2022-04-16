@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using android = Android;
 
-namespace NewMAUIApp.Library.Platforms.Android
+namespace NewMAUIApp.Library.Platforms
 {
     public class Location : Java.Lang.Object, ILocation, ILocationListener
     {

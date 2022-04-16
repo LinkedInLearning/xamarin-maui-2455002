@@ -16,9 +16,9 @@ namespace NewMAUIApp.Library.ViewModels
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public MainPageViewModel()
+        public MainPageViewModel(ILocation location)
         {
-            _Location = DependencyService.Get<ILocation>();
+            _Location = location;
         }
 
         public double CurrentLatitude { get; set; }
