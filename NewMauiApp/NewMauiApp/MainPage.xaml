@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:handlers="clr-namespace:NewMauiApp.Handlers"
              x:Class="NewMauiApp.MainPage"
              Title="Location">
     <Grid>
@@ -18,9 +19,9 @@
         </Grid.ColumnDefinitions>
         <Label Text="Location Information:" Grid.Row="1" Grid.ColumnSpan="2" />
         <Label Text="Latitude:" Grid.Row="2" Grid.Column="0" FontSize="16" />
-        <Label Text="{Binding CurrentLatitude}" Grid.Row="2" Grid.Column="1" FontSize="16" />
+        <handlers:CurrentLocationDisplay Text="{Binding CurrentLatitude}" Grid.Row="2" Grid.Column="1" FontSize="16" />
         <Label Text="Longitude:" Grid.Row="3" Grid.Column="0" FontSize="16" />
-        <Label Text="{Binding CurrentLongitude}" Grid.Row="3" Grid.Column="1" FontSize="16" />
+        <handlers:CurrentLocationDisplay Text="{Binding CurrentLongitude}" Grid.Row="3" Grid.Column="1" FontSize="16" />
         <Button Text="Refresh Location" Grid.Row="5" Grid.ColumnSpan="2" FontSize="16" Padding="30,30,30,30" Command="{Binding RefreshLocationCommand}" />
     </Grid>
 

@@ -1,4 +1,6 @@
-﻿namespace NewMauiApp;
+﻿using NewMauiApp.Handlers;
+
+namespace NewMauiApp;
 
 public partial class App : Application
 {
@@ -7,6 +9,13 @@ public partial class App : Application
 		InitializeComponent();
 
 		Routing.RegisterRoute("PushedPage", typeof(PushedPage));
+
+        Microsoft.Maui.Handlers.LabelHandler.Mapper.AppendToMapping(nameof(ILabel.Text), (handler, view) => { 
+        if (view is CurrentLocationDisplay)
+            {
+                handler.PlatformView.Text = handler.PlatformView.Text + "°";
+            }
+        });
 
 		MainPage = startPage;
 	}
@@ -28,6 +37,6 @@ public partial class App : Application
 
     private void Window_Activated(object sender, EventArgs e)
     {
-        System.Diagnostics.Debug.WriteLine("Window Activated");
+        System.Diagnostics.Debug.WriteLine("Window Activated ");
     }
 }
