@@ -1,4 +1,5 @@
-﻿using NewMAUIApp.Library.Interfaces;
+﻿using Microsoft.Maui.LifecycleEvents;
+using NewMAUIApp.Library.Interfaces;
 using NewMAUIApp.Library.ViewModels;
 
 namespace NewMauiApp;
@@ -20,6 +21,17 @@ public static class MauiProgram
 		builder.Services.AddTransient<LifecyclePage>();
 		builder.Services.AddTransient<MainShell>();
 		builder.Services.AddTransient<EffectsPage>();
+
+#if ANDROID
+		builder.ConfigureLifecycleEvents(events => { 
+			events.AddAndroid(android => {
+				android.OnRequestPermissionsResult((activity, requestCode, resultCode, data) =>
+				{
+					Platform.OnRequestPermissionsResult(requestCode, resultCode, data);
+				});
+			});
+		});
+#endif
 
 		builder.Services.AddSingleton<ILocation, NewMAUIApp.Library.Platforms.Location>();
 
