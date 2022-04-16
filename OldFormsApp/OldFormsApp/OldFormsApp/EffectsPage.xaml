@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:effects="clr-namespace:OldFormsApp.Effects;assembly=OldFormsApp"
+             xmlns:controls="clr-namespace:OldFormsApp.Controls;assembly=OldFormsApp"
+             x:Class="OldFormsApp.EffectsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  Text="A Text Color Effect"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Fill">
+                <Label.Effects>
+                    <effects:TextColorEffect />
+                </Label.Effects>
+            </Label>
+            <controls:AutoSelectEntry
+                Text="Auto Select Text"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Fill">
+            </controls:AutoSelectEntry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
