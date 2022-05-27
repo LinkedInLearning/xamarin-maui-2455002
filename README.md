@@ -1,7 +1,12 @@
-# Moving from Xamarin Forms to Maui
-This is the repository for the LinkedIn Learning course `Moving from Xamarin Forms to Maui`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Moving from Xamarin.Forms to .NET MAUI
+This is the repository for the LinkedIn Learning course Moving from Xamarin.Forms to .NET MAUI. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
+![Moving from Xamarin.Forms to .NET MAUI][lil-thumbnail-url] 
+
+It’s time to get up to speed with .NET MAUI, the new face of Xamarin.Forms developed by Microsoft as a replacement. In .NET MAUI—or, more accurately, .NET Multi-platform App UI—you can build native mobile and desktop apps that run anywhere, all from a single, shared code base. In this course, software developer and instructor Kevin Ford gives you an overview of the most important features of .NET MAUI including the critical changes it makes to Xamarin.Forms.
+
+Explore what you need to know to get started writing code with the new project structure. Learn about the key differences between .NET MAUI and Xamarin.Forms, including namespace changes, new views and controls, and major effects on cross-platform view rendering. Join Kevin to find out more about .NET MAUI and gather insights to boost your coding career.
+
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
@@ -27,8 +32,15 @@ To resolve this issue:
 3. [Course-specific instructions]
 
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+### Instructor
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+Kevin Ford 
+                            
 
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/kevin-ford).
+
+[lil-course-url]: https://www.linkedin.com/learning/moving-from-xamarin-forms-to-dot-net-maui
+[lil-thumbnail-url]: https://cdn.lynda.com/course/2455002/2455002-1653513650570-16x9.jpg
